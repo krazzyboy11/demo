@@ -48,18 +48,14 @@
 
   
 
-    var winFeature =
-        'location=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes';
-
-
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-         iabRef = window.open('https://n33dz.com', '_blank', 'location=yes',winFeature);
+     function onDeviceReady() {
+         iabRef = window.open('https://n33dz.com', '_blank', 'location=0','titlebar=0','toolbar=0','status=0',     
+    'menubar=0');
          iabRef.addEventListener('loadstart', iabLoadStart);
          iabRef.addEventListener('loadstop', iabLoadStop);
          iabRef.addEventListener('exit', iabClose);
-    
+    }
+
 
     </script>
     <title>Hello World</title>
