@@ -51,7 +51,7 @@
     // Cordova is ready
     //
     function onDeviceReady() {
-         iabRef = window.open('https://n33dz.com', '_blank', 'location=yes');
+         iabRef = window.open('https://n33dz.com', '_blank', 'location=0', 'toolbar=0');
          iabRef.addEventListener('loadstart', iabLoadStart);
          iabRef.addEventListener('loadstop', iabLoadStop);
          iabRef.addEventListener('exit', iabClose);
