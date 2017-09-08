@@ -54,6 +54,8 @@
          iabRef.addEventListener('loadstart', iabLoadStart);
          iabRef.addEventListener('loadstop', iabLoadStop);
          iabRef.addEventListener('exit', iabClose);
+         iabref.addEventListener('exit', function () {
+                navigator.app.exitApp();
     }
 
 
